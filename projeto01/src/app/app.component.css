@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    justify-content:  space-between;
+    background-color: rgb(13, 146, 64);
+    padding: 1%;
+}
+
+a {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ativo {
+    display: none;
+}

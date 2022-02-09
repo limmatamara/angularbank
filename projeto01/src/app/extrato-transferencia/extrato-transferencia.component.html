@@ -1,0 +1,21 @@
+<h1>Transferências</h1>
+
+<table *ngIf="transferencias.length > 0; else listaVazia">
+    <thead>
+        <th>Data</th>
+        <th>Valor</th>
+        <th>Destino</th>
+    </thead>
+
+    <tbody >
+        <tr  *ngFor="let transferencia of transferencias" >
+            <td> {{ transferencia?.data | date: 'short' }} </td>
+            <td> {{ transferencia?.valor | currency}} </td>
+            <td> {{ transferencia?.destino }} </td>
+        </tr>
+    </tbody>
+</table>
+
+<ng-template #listaVazia class="listaVazia">    
+    <p>Nenhuma operação cadastrada</p>
+</ng-template>

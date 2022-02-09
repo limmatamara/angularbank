@@ -1,0 +1,14 @@
+<form class="container" (ngSubmit)="transferir()">
+  <h1>Nova Transferência</h1>
+  <div class="input">
+    <label for="valor">Valor</label>
+    <input type="number" id="valor" ng placeholder="Digite o valor a ser transferido" [(ngModel)]="valor" name="valor">
+  </div>
+
+  <div class="input">
+    <label for="destino">Destinatário</label>
+    <input type="text" id="destino" placeholder="Digite para quem deseja transferir" [(ngModel)]="destino" name="destino">
+  </div>
+
+  <button type="submit">Transferir</button>
+</form>
